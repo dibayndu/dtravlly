@@ -1,42 +1,70 @@
-.App{
-  background-color: #FFA113;
+.App {
+  background-color: #ffa113;
   width: 100vw;
   height: 100vh;
   display: grid;
   place-items: center;
-  padding: 2rem;
+  padding: 0 3rem;
 }
 
-.main{
+.main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 0 2rem;
 }
 
-.banner{
+.banner {
   /* width: 50%; */
-  flex: .8;
-  padding: 2.5rem;
+  flex: 0.5;
+  /* padding: 2.5rem; */
 }
 
-.headline{
-    font-size: 2rem;
-    line-height: 4rem;
-    
+.headline {
+  font-size: 2rem;
+  line-height: 4rem;
   color: rgb(41, 40, 40);
 }
 
-.tagline{
+.tagline {
   color: rgb(58, 57, 57);
   margin-top: 1.5rem;
   line-height: 1.2rem;
 }
 
-.animationbackrgound{
-  /* flex: .5; */
+.animationbackrgound {
+  flex: 0.5;
 }
 
-.icons{
+.icons {
   margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    padding: 0;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .headline {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .animationbackrgound {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .tagline {
+    margin-top: 1rem;
+  }
 }
